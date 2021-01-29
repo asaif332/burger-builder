@@ -5,7 +5,7 @@ const Layout = (props) => {
 
     return (
         <div>
-            <h2>Top Bar</h2>
+            <p>Top Bar</p>
             <BurgerBuilder />
         </div>
     )

@@ -1,0 +1,20 @@
+.BurgerControl {
+    box-shadow: 1px 1px 2px grey;
+    display: flex;
+    /* margin-bottom: 10px; */
+    /* padding: 0px; */
+}
+
+.BurgerControl p {
+    flex-grow: 1;
+}
+
+.BurgerControl button {
+    margin-left: 10px;
+    color : white;
+    background-color : teal;
+    border : none;
+    cursor: pointer;
+    font-size : 20px;
+    padding : 2px 8px 3px 8px
+}
