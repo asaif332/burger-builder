@@ -1,5 +1,6 @@
 import classes from "./BurgerControls.module.css"
 import BurgerControl from "./BurgerControl/BurgerControl"
+import { ListGroup } from "react-bootstrap"
 
 const ingredients = [
     {
@@ -24,6 +25,7 @@ const BurgerControls = (props) => {
 
     return (
         <div className={classes.BurgerControls}>
+            <ListGroup  >
             {ingredients.map(ingredient => {
                 return(
                     <BurgerControl 
@@ -34,7 +36,7 @@ const BurgerControls = (props) => {
                     />
                 )
             })}
-            
+            </ListGroup>
         </div>
     )
 }

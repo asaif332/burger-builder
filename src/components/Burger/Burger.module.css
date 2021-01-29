@@ -1,12 +1,18 @@
 .Burger {
     width: 100%;
     max-width: 600px;
-    height: 250px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    height: 30vh;
     text-align: center;
     font-weight: bold;
     font-size: 1.2rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (max-width : 992px) {
+    .Burger {
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 48vh;
+    }
 }

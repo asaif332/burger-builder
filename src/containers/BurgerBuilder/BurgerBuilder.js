@@ -1,6 +1,7 @@
 import React from 'react'
 import Burger from '../../components/Burger/Burger'
 import BurgerControls from '../../components/Burger/BurgerControls/BurgerControls'
+import { Button, Col, Container, Row } from 'react-bootstrap'
 
 const pricesData = {
     meat : 10,
@@ -50,9 +51,15 @@ class BurgerBuilder extends React.Component {
 
     render() {
         return (
-            <div>
-            <Burger price={this.state.price} ingredients={this.state.ingredients} />
-            <BurgerControls increase={this.increase} decrease={this.decrease} />
+            <div style={{ marginTop : '54px'}}>
+                <Row>
+                    <Col lg={6}>
+                        <Burger price={this.state.price} ingredients={this.state.ingredients} />
+                    </Col>
+                    <Col lg={6}>
+                        <BurgerControls increase={this.increase} decrease={this.decrease} />
+                    </Col>
+                </Row>
             </div>
         )
     }

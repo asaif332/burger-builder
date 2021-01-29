@@ -1,15 +1,18 @@
+import { Button } from "react-bootstrap"
+import { ListGroupItem } from "react-bootstrap"
 import classes from "./BurgerControl.module.css"
 
 const BurgerControl = (props) => {
 
     return (
-        <div className={classes.BurgerControl}>
+        <ListGroupItem className={classes.BurgerControl}>
             <p>{ props.ingredient.title }</p>
+            <p></p>
             <p>
-                <button onClick={props.increase}>more</button>
-                <button onClick={props.decrease}>less</button>
+                <Button variant="danger" size="sm" onClick={props.increase}>more</Button>
+                <Button variant="success" size="sm" onClick={props.decrease}>less</Button>
             </p>
-        </div>
+        </ListGroupItem>
     )
 }
 
