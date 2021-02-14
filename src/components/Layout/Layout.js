@@ -1,14 +1,13 @@
 import React from 'react'
-import { Container, Navbar } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import BurgerBuilder from '../../containers/BurgerBuilder/BurgerBuilder'
+import Topbar from "../Navigation/Topbar/Topbar"
 
 const Layout = (props) => {
 
     return (
         <Container fluid>
-            <Navbar variant="dark" bg="info" fixed="top">
-                <Navbar.Brand href="#">Burger</Navbar.Brand>
-            </Navbar>
+            <Topbar />
             <BurgerBuilder />
         </Container>
     )

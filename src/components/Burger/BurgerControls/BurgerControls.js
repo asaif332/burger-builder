@@ -1,6 +1,6 @@
 import classes from "./BurgerControls.module.css"
 import BurgerControl from "./BurgerControl/BurgerControl"
-import { ListGroup } from "react-bootstrap"
+import { Button, ListGroup } from "react-bootstrap"
 
 const ingredients = [
     {
@@ -37,6 +37,8 @@ const BurgerControls = (props) => {
                 )
             })}
             </ListGroup>
+            <hr />
+            <Button variant="info" onClick={props.handleOpen}>Checkout</Button>
         </div>
     )
 }

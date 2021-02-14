@@ -17,11 +17,8 @@ const Burger = (props) => {
         ingredients = "Add Some Ingredients"
     }
 
-    console.log('ingredients' , Object.keys(props.ingredients))
-
     return (
         <>
-        <p>Price : ${ props.price }</p>
         <div className={classes.Burger}>
             <BurgerIngredient type="bread-top" />
             { ingredients }
