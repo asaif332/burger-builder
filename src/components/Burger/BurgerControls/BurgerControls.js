@@ -38,7 +38,7 @@ const BurgerControls = (props) => {
             })}
             </ListGroup>
             <hr />
-            <Button variant="info" onClick={props.handleOpen}>Checkout</Button>
+            <Button variant="info" onClick={props.handleOpen}>Proceed to checkout</Button>
         </div>
     )
 }

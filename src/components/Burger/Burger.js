@@ -19,6 +19,8 @@ const Burger = (props) => {
 
     return (
         <>
+        <h5>Total price - ${ props.price }</h5>
+        <br />
         <div className={classes.Burger}>
             <BurgerIngredient type="bread-top" />
             { ingredients }
